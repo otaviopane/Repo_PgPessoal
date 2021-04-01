@@ -1,5 +1,7 @@
 Aluno: Otavio Ferraroni Gonçalves Pane
+
 Curso: Desenvolvimento de Software Multiplataforma
+
 Video: https://youtu.be/m7VGsb6JsD0
 
 O repositorio tem a pasta mgt com o pdf do wireframe. 
