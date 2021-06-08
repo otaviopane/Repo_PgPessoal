@@ -3,47 +3,60 @@
 
 <head>
     <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <title>Otavio Ferraroni G. Pane</title>
 </head>
 
 <body>
-    <header class="menu-principal">
-        <div class="botoes">
-            <a href="index.html"><button class=div_responsiva_header>HOME</button></a>
-            <a href="p_sobre.html"><button class=div_responsiva_header>SOBRE</button></a>
-            <a href="p_conhecimentos.html"><button class=div_responsiva_header>CONHECIMENTOS</button></a>
-            <a href="p_projetos.html"><button class=div_responsiva_header>PROJETOS</button></a>
-        </div>
-    </header>
+    <div class="grid_home">
+        <header class="menu-principal">
+            <div class="botoes">
+                <a href="index.html"><button class=menu_responsivo>HOME</button></a>
+                <a href="p_sobre.html"><button class=menu_responsivo>SOBRE</button></a>
+                <a href="p_conhecimentos.html"><button class=menu_responsivo>CONHECIMENTOS</button></a>
+                <a href="p_projetos.html"><button class=menu_responsivo>PROJETOS</button></a>
+            </div>
+        </header>
 
-    <main class=div_responsiva_index>
-        <p class="t1">Hello World!</p>
-        <p class="t2">Olá Mundo!</p>
-        <p class="t3">I am Otavio.</p>
-        <p class="t4">Eu sou o Otavio.</p>
-    </main>
+        <div class=abertura_responsiva_1>
+            <p class="t1">Hello World!</p>
+        </div>
+        <div class=abertura_responsiva_2>
+            <p class="t2">Olá Mundo!</p>
+        </div>
+        <div class=abertura_responsiva_3>
+            <p class="t3">I am Otavio.</p>
+        </div>
+        <div class=abertura_responsiva_4>
+            <p class="t4">Eu sou o Otavio.</p>
+        </div>
+        <div class=div_responsiva_foto> 
+            <img class=foto_responsiva srcset="img/foto_perfil_300.png 300w, img/foto_perfil_750.png 750w" 
+        sizes="(max-width: 500px) 300px, 750px" alt='Foto d Perfil'/>   
+        </div>
     
-    <div class=div_responsiva_foto> 
-        <img class=img_responsiva srcset="img/foto_perfil_300.png 300w, img/foto_perfil_750.png 750w" 
-    sizes="(max-width: 600px) 300px, 750px" alt='Foto d Perfil'/>   
-    </div>
      
 
-    <footer class="roda-pe" >
-        <div class=div_responsiva_footer>
-        <p><img class=img_responsiva_footer src="img/big-map.svg" alt='Icone Mapa'/>
-            <a href="https://www.google.com/maps/place/Sao+Jose+dos+Campos" target="_blank">São José dos Campos</a></p>
-        <p><img class=img_responsiva_footer src="img/email.svg" alt='Icone Email'/>
-            <a href="mailto:otavio.pane@gmail.com" target="_blank">otavio.pane@gmail.com</a></p>
-        </div>
-        <div class=div_responsiva_footer>
-        <p><img class=img_responsiva_footer src="img/linkedin.svg" alt='Icone LinkedIn'/>
-            <a href="https://www.linkedin.com/in/otavioferraronigpane/" target="_blank">linkedin.com/in/<br>otavioferraronigpane</a></p>
-        <p><img class=img_responsiva_footer src="img/github.svg" alt='Icone GitHub'/>
-            <a href="https://www.github.com/otaviopane" target="_blank">github.com/otaviopane</a></p>
-        </div>
-    </footer>
+        <footer>
+            <div class=mp>
+                <p><img class=lmp src="img/big-map.svg" alt='Icone Mapa'/>
+                <a href="https://www.google.com/maps/place/Sao+Jose+dos+Campos" target="_blank">São José dos Campos</a></p>
+            </div>
+            <div class="ma">
+                <p><img class=lma src="img/email.svg" alt='Icone Email'/>
+                <a href="mailto:otavio.pane@gmail.com" target="_blank">otavio.pane@gmail.com</a></p>
+            </div>
+            <div class=ld>
+                <p><img class=lld src="img/linkedin.svg" alt='Icone LinkedIn'/>
+                <a href="https://www.linkedin.com/in/otavioferraronigpane/" target="_blank">linkedin.com/in/<br>otavioferraronigpane</a></p>
+            </div>
+            <div class="gh">    
+                <p><img class=lgh src="img/github.svg" alt='Icone GitHub'/>
+                <a href="https://www.github.com/otaviopane" target="_blank">github.com/otaviopane</a></p>
+            </div>
+        </footer>
+    </div>  
 
 </body>
 

@@ -1,4 +1,8 @@
-/*Fonte das Paginas*/
+/* ----------------------------------------------Geral----------------------------------------------------*/
+
+/* -------------------------------------------Fontes-------------------------------------------------*/
+
+/*------------------------------------------Fonte das Paginas------------------------------------------*/
 * {
   font-family: Helvetica;
   color: rgb(33, 33, 33);
@@ -10,115 +14,7 @@ body {
   margin: 0 auto;
 }
 
-/*Header e Botões*/
-.menu-principal {
-  width: 100%;
-  background-color: rgb(33, 33, 33);
-  height: 6em;
-  vertical-align: middle;
-}
-
-.botoes button {
-  margin: auto;
-  background-color: rgb(33, 33, 33);
-  color: white;
-  border: none;
-  border-radius: 2em;
-  font-weight: bold;
-}
-
-/* Responsividade*/
-/* Divisão da tela responsiva em dois blocos*/
-.div_responsiva {
-  display: inline-block;
-  box-sizing: border-box;
-  width: 49%;
-  height: auto;
-  border-style: none;
-  vertical-align: top;
-  font-size: 1.5em;
-  text-align: center;
-}
-.div_responsiva_index {
-  display: inline-block;
-  box-sizing: border-box;
-  width: 69%;
-  height: 25em;
-  border-style: none;
-  vertical-align: top;
-  font-size: 1.5em;
-  text-align: center;
-}
-.div_responsiva_foto {
-  display: inline-block;
-  box-sizing: border-box;
-  width: 30%;
-  height: auto;
-  border-style: none;
-  text-align: center;
-}
-.div_responsiva_header {
-  display: inline-block;
-  box-sizing: border-box;
-  width: 24.5%;
-  height: 3em;
-  border-style: none;
-  vertical-align: middle;
-  font-size: 2em;
-  text-align: center;
-}
-.div_responsiva_footer {
-  display: inline-block;
-  box-sizing: border-box;
-  width: 33%;
-  height: auto;
-  border-style: none;
-  vertical-align: middle;
-  font-size: 1.5em;
-  text-align: center;
-}
-
-/* Imagem responsiva dentro do bloco*/
-.img_responsiva {
-  display: block;
-  width: 50%;
-  margin: auto;
-  margin-top: 40%;
-  text-align: center;
-  border-radius: 2em;
-}
-
-.img_responsiva_footer {
-  display: inline-block;
-  vertical-align: middle;
-  width: 8%;
-  size: auto;
-  margin: auto;
-  text-align: center;
-}
-
-/* Responsividade < 600px*/
-@media (max-width: 600px) {
-  .div_responsiva {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
-  .div_responsiva_header {
-    display: block;
-    width: 49%;
-    background-color: rgb(33, 33, 33);
-  }
-
-  .img_responsiva {
-    display: block;
-    width: 90%;
-    height: auto;
-  }
-}
-
-/*Titulos e Destaques*/
+/*------------------------------------------Titulos e Destaques------------------------------------------*/
 
 .titulos {
   background-color: rgb(33, 33, 33);
@@ -132,26 +28,28 @@ body {
 }
 
 .t1 {
-  font-size: 3em;
-  margin-top: 8%;
+  font-size: 4vw;
+  margin-left: 10vw;
+  margin-top: 8vh;
   font-weight: bold;
 }
 
 .t2 {
-  font-size: 2.5em;
-  margin-left: 35%;
+  font-size: 3.5vw;
+  margin-left: 20vw;
   font-weight: bold;
 }
 
 .t3 {
-  font-size: 2.5em;
-  margin-left: 20%;
+  font-size: 3.5vw;
+  margin-left: 15vw;
+  margin-top: 8vh;
   font-weight: bold;
 }
 
 .t4 {
-  font-size: 2em;
-  margin-left: 40%;
+  font-size: 3vw;
+  margin-left: 25vw;
   font-weight: bold;
 }
 .t5 {
@@ -175,17 +73,267 @@ li {
   list-style: none;
 }
 
-/*Footer e Links externos*/
-.roda-pe {
-  padding: 5px;
-  color: white;
-  background-color: rgb(33, 33, 33);
-  width: 100%;
-  height: 150px;
-  position:fixed
-  bottom: 0;
-}
-
 a {
   color: white;
+  text-decoration: none;
+}
+
+.grid_home {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 7fr 3fr;
+  grid-template-areas:
+    "h h"
+    "ab1 ft"
+    "ab2 ft"
+    "ab3 ft"
+    "ab4 ft"
+    "f f";
+}
+/* -------------------------------------------Header-------------------------------------------------*/
+header {
+  background-color: rgb(33, 33, 33);
+  height: 10vw;
+  max-height: 10vh;
+  grid-area: h;
+}
+
+.botoes button {
+  background-color: rgb(33, 33, 33);
+  color: white;
+  width: 24vw;
+  font-weight: bold;
+}
+.menu_responsivo {
+  display: inline-block;
+  width: 50vh;
+  height: 10vw;
+  max-height: 10vh;
+  border-style: none;
+  font-size: min(max(12px, 2vw), 40px);
+}
+/* -------------------------------------------Home-------------------------------------------------*/
+.abertura_responsiva_1 {
+  grid-area: ab1;
+  margin-top: 2vw;
+  height: 10vh;
+}
+.abertura_responsiva_2 {
+  grid-area: ab2;
+  height: 10vh;
+}
+.abertura_responsiva_3 {
+  grid-area: ab3;
+  margin-top: 2vw;
+  height: 10vh;
+}
+.abertura_responsiva_4 {
+  grid-area: ab4;
+  height: 10vh;
+  margin-bottom: 8em;
+}
+.div_responsiva_foto {
+  grid-area: ft;
+  align-self: center;
+  justify-content: center;
+}
+.foto_responsiva {
+  width: 70%;
+  border-radius: 2em;
+}
+/* -------------------------------------------Footer-------------------------------------------------*/
+footer {
+  grid-area: f;
+  color: white;
+  background-color: rgb(33, 33, 33);
+  display: grid;
+  width: 100vw;
+  height: 1fr;
+  grid-template-columns: 6;
+  grid-template-rows: 2;
+  grid-template-areas:
+    "lmp mp lld ld cm cm"
+    "lma ma lgh gh cm cm";
+}
+
+.ma {
+  height: auto;
+  align-self: center;
+  font-size: 1.5em;
+  text-align: center;
+  grid-area: ma;
+}
+.mp {
+  height: auto;
+  align-self: center;
+  font-size: 1.5em;
+  text-align: center;
+  grid-area: mp;
+}
+.ld {
+  height: auto;
+  align-self: center;
+  font-size: 1.5em;
+  text-align: center;
+  grid-area: ld;
+}
+.gh {
+  height: auto;
+  align-self: center;
+  font-size: 1.5em;
+  text-align: center;
+  grid-area: gh;
+}
+.lmp {
+  width: 2vw;
+  align-self: center;
+  size: auto;
+  filter: invert(100%);
+  grid-area: lmp;
+}
+.lma {
+  width: 2vw;
+  align-self: center;
+  size: auto;
+  filter: invert(100%);
+  grid-area: lma;
+}
+.lld {
+  width: 2vw;
+  align-self: center;
+  size: auto;
+  filter: invert(100%);
+  grid-area: lld;
+}
+.lgh {
+  width: 2vw;
+  align-self: center;
+  size: auto;
+  filter: invert(100%);
+  grid-area: lgh;
+}
+
+/* -------------------------------------------Responsividade 1250-------------------------------------------------*/
+
+/* Responsividade < 1250px*/
+@media (max-width: 1250px) {
+  .t1,
+  .t2,
+  .t3,
+  .t4 {
+    font-size: 4.5vw;
+  }
+}
+
+/* -------------------------------------------Responsividade 1024-------------------------------------------------*/
+
+/* Responsividade < 1024px*/
+@media (max-width: 1024px) {
+  .t1,
+  .t2,
+  .t3,
+  .t4 {
+    font-size: 5vw;
+  }
+}
+/* -------------------------------------------Responsividade 900-------------------------------------------------*/
+
+/* Responsividade < 900px*/
+@media (max-width: 900px) {
+  .grid_home {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 7;
+    grid-template-areas:
+      "h"
+      "ab1 "
+      "ab2"
+      "ft"
+      "ab3"
+      "ab4"
+      "f";
+  }
+  /* .div_responsiva_foto {
+    width: 100vw;
+  } */
+  .foto_responsiva {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: start;
+    width: 70%;
+    margin-top: 8vh;
+    margin-left: 15vw;
+    border-radius: 2em;
+  }
+  .abertura_responsiva_1,
+  .abertura_responsiva_2,
+  .abertura_responsiva_3,
+  .abertura_responsiva_4 {
+    /* margin-bottom: 0;
+    margin-top: 0; */
+    text-align: center;
+  }
+
+  .t1,
+  .t2,
+  .t3,
+  .t4 {
+    font-size: 8vw;
+    margin-left: none;
+    margin-top: none;
+    margin-bottom: none;
+    margin-right: none;
+  }
+}
+/* -------------------------------------------Responsividade 500-------------------------------------------------*/
+
+/* Responsividade < 500px*/
+@media (max-width: 500px) {
+  .grid_home {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 7;
+    grid-template-areas:
+      "h"
+      "ab1 "
+      "ab2"
+      "ft"
+      "ab3"
+      "ab4"
+      "f";
+  }
+  /* .div_responsiva_foto {
+    width: 100vw;
+  } */
+  .foto_responsiva {
+    display: inline;
+    width: 70%;
+    margin-top: 8vh;
+    margin-left: 15vw;
+    border-radius: 2em;
+  }
+  .abertura_responsiva_1,
+  .abertura_responsiva_2,
+  .abertura_responsiva_3,
+  .abertura_responsiva_4 {
+    /* margin-bottom: 0;
+    margin-top: 0; */
+    text-align: center;
+  }
+
+  .t1,
+  .t2,
+  .t3,
+  .t4 {
+    font-size: 8vw;
+    margin-left: none;
+    margin-top: none;
+    margin-bottom: none;
+    margin-right: none;
+  }
 }
