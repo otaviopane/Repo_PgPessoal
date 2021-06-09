@@ -83,10 +83,11 @@ ul > p {
 }
 /* --------------------------Projetos------------------------------*/
 
-.pj_list{
+.pj_list {
   font-size: 2.2vw;
+  margin: 1vw;
+  margin-left: 0;
   font-weight: bold;
-
 }
 
 /* ---------------------------Footer---------------------------------*/
@@ -267,8 +268,8 @@ header {
   font-size: 3vw;
 }
 .img_responsiva {
-  height: 200px;
-  width: 300px;
+  height: 180px;
+  width: 320px;
   border-radius: 2em;
 }
 /* -------------------------------------------Footer-------------------------------------------------*/
@@ -516,6 +517,32 @@ footer {
   }
   .conhecimentos {
     margin-bottom: 10vw;
+  }
+  /* -----------------------------Projetos-----------------------------*/
+  .grid_proj {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 9fr 1fr;
+    grid-template-areas:
+      "h h h"
+      ". pj ."
+      ". re ."
+      "f f f";
+  }
+  .projetos {
+    text-align: center;
+  }
+  .realizados {
+    text-align: center;
+  }
+  .tp {
+    font-size: 7vw;
+  }
+  .pj_list {
+    font-size: 5vw;
+    margin: 2vw;
+  }
 }
 
 /* -------------------------------------------Responsividade 500-------------------------------------------------*/
@@ -630,5 +657,34 @@ footer {
   }
   .conhecimentos {
     margin-bottom: 10vw;
-}
+  }
+  /* -----------------------------Projetos-----------------------------*/
+  .grid_proj {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 9fr 1fr;
+    grid-template-areas:
+      "h h h"
+      ". pj ."
+      ". re ."
+      "f f f";
+  }
+  .projetos {
+    text-align: center;
+  }
+  .realizados {
+    text-align: center;
+  }
+  .tp {
+    font-size: 7vw;
+  }
+  .pj_list {
+    font-size: 4vw;
+    margin: 1.5vw;
+  }
+  .img_responsiva {
+    width: 70%;
+    height: 70%;
+  }
 }

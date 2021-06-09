@@ -3,59 +3,60 @@
 
 <head>
     <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <title>Otavio Ferraroni G. Pane</title>
 </head>
 
 <body>
-    <header class="menu-principal">
-        <div class="botoes">
-            <a href="index.html"><button class=div_responsiva_header>HOME</button></a>
-            <a href="p_sobre.html"><button class=div_responsiva_header>SOBRE</button></a>
-            <a href="p_conhecimentos.html"><button class=div_responsiva_header>CONHECIMENTOS</button></a>
-            <a href="p_projetos.html"><button class=div_responsiva_header>PROJETOS</button></a>
-        </div>
-    </header>
+    <div class="grid_proj">
+        <header>
+            <div class="botoes">
+                <a href="index.html"><button class=menu_responsivo>HOME</button></a>
+                <a href="p_sobre.html"><button class=menu_responsivo>SOBRE</button></a>
+                <a href="p_conhecimentos.html"><button class=menu_responsivo>CONHECIMENTOS</button></a>
+                <a href="p_projetos.html"><button class=menu_responsivo>PROJETOS</button></a>
+            </div>
+        </header>
 
-    <section class=div_responsiva>
-        <h1 class=titulos>Projetos:</h1>
-            <ul>
-                <li>Projeto_iniciado:</li>
-                <img src='./img/img_pjt.png'>
-                <li>Projeto_não_iniciado:</li>
-                <img src='./img/img_pjt.png'>
-            </ul>
-    </section>
+        <section class=projetos>
+            <h1 class="tp">Projetos:</h1>
+                <ul>
+                    <li class="pj_list">NLW 05 Podcastr - Iniciado:</li>
+                    <a href="https://github.com/otaviopane/nlw05" target="_blank"><img class="img_responsiva" src='img\nlw05 _podcastr.jpg'></a>
+                    <li class="pj_list">JokenPoke - Não Iniciado:</li>
+                    <a href="https://github.com/otaviopane/MyLearning/blob/master/Jokenpoke.py" target="_blank"><img class="img_responsiva" src='img\jokenpoke.jpg'></a>
+        </section>
 
-    <section class=div_responsiva>
-        <h1 class=titulos>Realizados:</h1>
-            <ul>
-                <li>Projeto_feito1:</li>
-                <img src='./img/img_pjt.png'>
-                <li>Projeto_feito3:</li>
-                <img src='./img/img_pjt.png'>
-            </ul>
-    </section>
+        <section class=realizados>
+            <h1 class="tp">Realizados:</h1>
+                <ul>
+                    <li class="pj_list">F1-2020:</li>
+                    <a href="https://github.com/otaviopane/MyLearning/blob/master/f1_2020.py" target="_blank"><img class="img_responsiva" src='img\f1_2020.jpg'></a>
+                    <li class="pj_list">Página Pessoal:</li>
+                    <a href="https://github.com/otaviopane/Repo_PgPessoal" target="_blank"><img class="img_responsiva" src='./img/pg_pessoal.jpg'></a>
+                </ul>
+        </section>
 
-
-
-
-
-    <footer class="roda-pe" >
-        <div class=div_responsiva_footer>
-        <p><img class=img_responsiva_footer src="img/big-map.svg" alt='Icone Mapa'/>
-            <a href="https://www.google.com/maps/place/Sao+Jose+dos+Campos" target="_blank">São José dos Campos</a></p>
-        <p><img class=img_responsiva_footer src="img/email.svg" alt='Icone Email'/>
-            <a href="mailto:otavio.pane@gmail.com" target="_blank">otavio.pane@gmail.com</a></p>
-        </div>
-        <div class=div_responsiva_footer>
-        <p><img class=img_responsiva_footer src="img/linkedin.svg" alt='Icone LinkedIn'/>
-            <a href="https://www.linkedin.com/in/otavioferraronigpane/" target="_blank">linkedin.com/in/<br>otavioferraronigpane</a></p>
-        <p><img class=img_responsiva_footer src="img/github.svg" alt='Icone GitHub'/>
-            <a href="https://www.github.com/otaviopane" target="_blank">github.com/otaviopane</a></p>
-        </div>
-    </footer>
-
+        <footer>
+            <div class=mp>
+                <p><img class=lmp src="img/big-map.svg" alt='Icone Mapa'/>
+                <a href="https://www.google.com/maps/place/Sao+Jose+dos+Campos" target="_blank">São José dos Campos</a></p>
+            </div>
+            <div class="ma">
+                <p><img class=lma src="img/email.svg" alt='Icone Email'/>
+                <a href="mailto:otavio.pane@gmail.com" target="_blank">otavio.pane@gmail.com</a></p>
+            </div>
+            <div class=ld>
+                <p><img class=lld src="img/linkedin.svg" alt='Icone LinkedIn'/>
+                <a href="https://www.linkedin.com/in/otavioferraronigpane/" target="_blank">linkedin.com/in/<br>otavioferraronigpane</a></p>
+            </div>
+            <div class="gh">    
+                <p><img class=lgh src="img/github.svg" alt='Icone GitHub'/>
+                <a href="https://www.github.com/otaviopane" target="_blank">github.com/otaviopane</a></p>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
