@@ -95,6 +95,13 @@ a {
   color: white;
   text-decoration: none;
 }
+h2 {
+  font-size: 2.2vw;
+  color: white;
+  margin: 0 auto;
+  margin-bottom: 1vw;
+  margin-right: 10vw;
+}
 
 /* -------------------------------------------Grids-------------------------------------------------*/
 .grid_home {
@@ -277,11 +284,10 @@ footer {
   grid-area: f;
   color: white;
   background-color: rgb(33, 33, 33);
+  grid-template-columns: 1fr 5fr 1fr 5fr 6fr;
   display: grid;
   width: 100vw;
   height: 1fr;
-  grid-template-columns: 6;
-  grid-template-rows: 2;
   grid-template-areas:
     "lmp mp lld ld cm cm"
     "lma ma lgh gh cm cm";
@@ -292,61 +298,78 @@ footer {
   height: 30vh;
 }
 
-.ma {
-  height: auto;
-  align-self: center;
-  font-size: 1.5em;
-  text-align: center;
-  grid-area: ma;
-}
 .mp {
-  height: auto;
   align-self: center;
-  font-size: 1.5em;
+  font-size: 2vw;
   text-align: center;
+  margin-right: 3vw;
   grid-area: mp;
 }
-.ld {
-  height: auto;
+.ma {
   align-self: center;
-  font-size: 1.5em;
+  font-size: 2vw;
   text-align: center;
+  margin-right: 3vw;
+  grid-area: ma;
+}
+.ld {
+  align-self: center;
+  font-size: 2vw;
+  text-align: center;
+  margin-right: 3vw;
   grid-area: ld;
 }
 .gh {
-  height: auto;
   align-self: center;
-  font-size: 1.5em;
+  font-size: 2vw;
   text-align: center;
+  margin-right: 3vw;
   grid-area: gh;
 }
 .lmp {
-  width: 2vw;
+  width: 3vw;
   align-self: center;
-  size: auto;
+  justify-self: center;
   filter: invert(100%);
   grid-area: lmp;
 }
 .lma {
-  width: 2vw;
+  width: 3vw;
   align-self: center;
-  size: auto;
+  justify-self: center;
   filter: invert(100%);
   grid-area: lma;
 }
 .lld {
-  width: 2vw;
+  width: 3vw;
   align-self: center;
-  size: auto;
+  justify-self: center;
   filter: invert(100%);
   grid-area: lld;
 }
 .lgh {
-  width: 2vw;
+  width: 3vw;
   align-self: center;
-  size: auto;
+  justify-self: center;
   filter: invert(100%);
   grid-area: lgh;
+}
+.t_cm {
+  grid-area: cm;
+  margin: 1vw;
+  margin-top: 2vw;
+  height: auto;
+  text-align: center;
+  align-self: center;
+}
+input {
+  background-color: rgb(60, 60, 60);
+  /* display: inline-block; */
+  padding: 2.8vw 6vw;
+  line-height: 100%;
+  border-radius: 2em;
+  border-style: none;
+  margin: 1vw;
 }
 
 /* -------------------------------------------Responsividade 1250-------------------------------------------------*/
@@ -421,11 +444,12 @@ footer {
   }
 
   .foto_responsiva {
+    margin: auto 0;
     display: flex;
     justify-content: start;
-    width: 70%;
+    width: 50%;
     margin-top: 8vh;
-    margin-left: 15vw;
+    margin-left: 25vw;
     border-radius: 2em;
     filter: opacity(95%);
   }
@@ -440,11 +464,24 @@ footer {
   .t2,
   .t3,
   .t4 {
+    margin: auto 0;
+    margin-top: 5vw;
+  }
+  .t1 {
+    font-size: 12vw;
+    margin-right: 10vw;
+  }
+  .t2 {
+    font-size: 10vw;
+    margin-left: 30vw;
+  }
+  .t3 {
+    font-size: 10vw;
+    margin-right: 10vw;
+  }
+  .t4 {
     font-size: 8vw;
-    margin-left: none;
-    margin-top: none;
-    margin-bottom: none;
-    margin-right: none;
+    margin-left: 30vw;
   }
 
   /* ---------------------------Sobre---------------------------------*/
@@ -542,6 +579,17 @@ footer {
   .pj_list {
     font-size: 5vw;
     margin: 2vw;
+  }
+
+  /* --------------------------Footer--------------------------------*/
+  footer {
+    grid-template-columns: 1fr 8fr 3fr;
+    text-align: left;
+    grid-template-areas:
+      "lmp mp cm"
+      "lma ma cm"
+      "lld ld cm"
+      "lgh gh cm";
   }
 }
 
@@ -686,5 +734,15 @@ footer {
   .img_responsiva {
     width: 70%;
     height: 70%;
+  }
+  /* --------------------------Footer--------------------------------*/
+  footer {
+    grid-template-columns: 1fr 60% 5fr;
+    text-align: left;
+    grid-template-areas:
+      "lmp mp cm"
+      "lma ma cm"
+      "lld ld cm"
+      "lgh gh cm";
   }
 }
